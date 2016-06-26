@@ -4,7 +4,7 @@ I found this to be a very interesting test, I’ve not had the opportunity to cr
 
 ## 1) How can you initialize and render the widget in that Web page? How can communicate the Web app with the Parking widget (and vice versa) ?
 
-My initial thoughts were to create the widget as a standalone web-page and then use an iFrame element to render than within the main website. But I found there were several issues with this, one the size of the iFrame would need to be adjusted according to the certain interactions, and I would be limited to using PostMessage to send information to the host Web page. If I had more time to investigate, I would probably look into using WebSockets, and rendering the page with Mustache.js instead.
+My initial thoughts were to create the widget as a standalone web-page and then use an iFrame element to render that web-page on the main website. But I found there were several issues with this, one the size of the iFrame would need to be adjusted according to the certain interactions, and I would be limited to using PostMessage to send information to the host Web page. If I had more time to investigate, I would probably look into using WebSockets for the two-way communication, and rendering the page with Mustache.js instead.
 
 ## 2) How can you guarantee that another developer can modify your code without breaking the features? How can you guarantee to modify your code during a refactoring without breaking any functionality?
 
