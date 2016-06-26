@@ -4,5 +4,5 @@ export default function (element, data) {
     postData.name = 'parkingWidget';
     postData.props = data;
     parent.postMessage(postData, '*');
-  })
+  });
 }
