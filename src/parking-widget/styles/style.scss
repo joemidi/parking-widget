@@ -1,0 +1,71 @@
+@import 'normalize';
+@include normalize();
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin-bottom: 3em;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.parking-features {
+  display: none;
+
+  &.parking-features__open {
+    display: table;
+  }
+
+  img, ul {
+    float: left;
+  }
+}
+
+.parking-features-state {
+  color: #ff0000;
+  cursor: pointer;
+  text-align: right;
+  padding: 1em 0;
+}
+
+.parking-spaces {
+  div {
+    // border: 1px solid #929292;
+  }
+}
+
+.col-4 {
+  position: relative;
+  float: left;
+  width: 25%;
+  padding: 0.5em;
+
+  div {
+    background: #fff;
+    border: 1px solid #929292;
+    padding: 1em 0.5em;
+
+    &:active, &:hover {
+      background: #e8e8e8;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.parking-space-details {
+  line-height: 1.5em;
+  margin-top: 0;
+}
+
+.parking-space-price {
+  text-align: right;
+  font-size: 2em;
+  margin: 0;
+}
