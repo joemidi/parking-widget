@@ -1,5 +1,8 @@
 export default function (element, data) {
   element.addEventListener('click', () => {
-    parent.postMessage(data, '*');
+    const postData = {};
+    postData.name = 'parkingWidget';
+    postData.props = data;
+    parent.postMessage(postData, '*');
   })
 }

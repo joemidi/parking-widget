@@ -14,7 +14,9 @@ class Base {
   }
 
   receiveMessage(event) {
-    this.selectedSpace.innerHTML = `#${event.data.id}`;
+    if (event.data.name === 'parkingWidget') {
+      this.selectedSpace.innerHTML = `#${event.data.props.id}`;
+    }
   }
 }
 

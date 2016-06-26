@@ -7,9 +7,6 @@ export default class App {
     this.loadModel();
     this.bindSelectors();
     this.bindEvents();
-    this.height = document.body.scrollHeight;
-    console.log(document.body.scrollHeight);
-    this.postHeight();
   }
 
   bindSelectors() {
@@ -36,10 +33,6 @@ export default class App {
         this.elements.parkingFeaturesState.innerHTML = 'Nascondi dettagli';
       }
     });
-  }
-
-  postHeight() {
-    parent.postMessage(this.height, '*');
   }
 }
 
