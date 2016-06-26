@@ -7,6 +7,9 @@
     "type": "git",
     "url": "http://github.com/pyramidium/generator-bannertime"
   },
+  "scripts": {
+    "deploy": "bash gulpfile.babel.js/lib/deploy.sh"
+  },
   "devDependencies": {
     "babel-loader": "^6.2.4",
     "babel-plugin-add-module-exports": "^0.1.2",
